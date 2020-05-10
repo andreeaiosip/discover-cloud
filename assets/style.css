@@ -196,3 +196,18 @@ input[type=text], input[type=tel], select, textarea, input[type=email] {
 .service-check>p, .contact-type>p {
     color: #fafafa;
 }
+
+
+@media only screen and (min-width: 600px) {
+    .container-form{
+        width: 60vw;
+        padding: 20px;
+
+    }
+}
+@media screen and (min-width: 1022px) {
+    .container-form{
+        width: 40vw;
+        padding: 40px;
+    }
+}
