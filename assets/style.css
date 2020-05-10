@@ -34,6 +34,12 @@ main {
 	cursor: pointer;
 }
 
+/*
+-----------------
+Navbar
+-----------------
+*/
+
 .title-logo {
 	font-family: 'Poppins', sans-serif;
 	margin: 0;
@@ -115,6 +121,11 @@ main {
 	right: 0;
 }
 
+/*
+-----------------
+Main content - Index
+-----------------
+*/
 .intro {
 	color: #fafafa;
 	display: flex;
@@ -155,6 +166,10 @@ color: #fafafa;
 	top:1px;
 }
 
+-----------------
+Contact form
+-----------------
+*/
 input[type=text], input[type=tel], select, textarea, input[type=email] {
     width: 100%;
     padding: 8px;
