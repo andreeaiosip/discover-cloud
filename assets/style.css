@@ -1,60 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Raleway&display=swap');
+
 /* General */
 
 
 /* This code will fix image background streching on mobile view when the modal is open - code found here https://stackoverflow.com/questions/26372127/background-fixed-no-repeat-not-working-on-mobile */
 
 body:before {
-    content: "";
-    display: block;
-    position: fixed;
-    font-family: 'Poppins', sans-serif;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-    background: url("./img/bg4.jpg") no-repeat center center;
-    background-size: cover;
+	content: "";
+	display: block;
+	position: fixed;
+	font-family: 'Poppins', sans-serif;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -10;
+	background: url("./img/bg4.jpg") no-repeat center center;
+	background-size: cover;
 }
 
 main {
-    flex: 1;
+	flex: 1;
 }
 
 .row,
 .container-fluid,
 .container {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .pointer {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .title-logo {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    color: #fafafa;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	color: #fafafa;
 }
+
 .navbar {
-	background-color: #21252900;
+    background-color: rgb(4, 18, 31);
 	-webkit-box-shadow: 0px 3px 5px 0px (59, 57, 57, 0.75);
 	-moz-box-shadow: 0px 3px 5px 0px (59, 57, 57, 0.75);
 	box-shadow: 0px 3px 5px 0px rgba(59, 57, 57, 0.75);
 }
 
-
 .nav-item {
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: centre;
 }
 
 .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(250, 250, 250)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(250, 250, 250)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .navbar-light .navbar-nav .nav-item .nav-link {
@@ -66,7 +67,7 @@ main {
 
 .nav-item {
 	text-align: center;
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 
@@ -77,102 +78,121 @@ main {
 	font-weight: 700 !important;
 }
 
+
 /* Underline From Center */
+
 .hvr-underline-from-center {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    position: relative;
-    overflow: hidden;
-  }
-  .hvr-underline-from-center:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 51%;
-    right: 51%;
-    bottom: 0;
-    background: #fafafa;
-    height: 2px;
-    -webkit-transition-property: left, right;
-    transition-property: left, right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
-  }
-  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
-    left: 0;
-    right: 0;
-  }
-
-
-footer {
-    padding-bottom: 10px;
-    margin-top: 70px;
-    font-size: 1rem;
-    color: #fafafa !important;
-    text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
 }
 
+.hvr-underline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	bottom: 0;
+	background: #fafafa;
+	height: 2px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
 
-/* Back to top button */
+.hvr-underline-from-center:hover:before,
+.hvr-underline-from-center:focus:before,
+.hvr-underline-from-center:active:before {
+	left: 0;
+	right: 0;
+}
 
+.intro {
+	color: #fafafa;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+}
 
-/* Code found here https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ and color tailored to match the color scheme on the website*/
+.btn {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	font-weight:bold;
+    padding:7px 10px;
+    margin-top: 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
 
-/*#back2Top {
-    width: 40px;
-    line-height: 40px;
-    overflow: hidden;
-    z-index: 999;
-    display: none;
+.btn>a {
+text-decoration: none;
+color: #fafafa;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+input[type=text], input[type=tel], select, textarea, input[type=email] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-    transform: rotate(270deg);
-    position: fixed;
-    bottom: 50px;
-    right: 5px;
-    background-color: #e7e7e7;
-    color: #9a5da5;
+    display: block;
+    margin: 0 auto;
+  }
+  .container-form {
     text-align: center;
-    font-size: 30px;
-    text-decoration: none;
-    border-radius: 5px;
+    width: 90vw;
+    min-height: 80vh;
+    margin: auto;
+    padding: 10px;
+    background-color: #cae0e428;
+    margin-bottom: 50px;
+    
+  }
+
+  label {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: #fafafa;
 }
 
-#back2Top:hover {
-    background-color: #DDF;
-    color: #9c27b0;
+.service-check>p, .contact-type>p {
+    color: #fafafa;
 }
-
-
- Media queries */
-
-
-/* Landscape phones and portrait tablets 
-
-@media screen and (min-width: 767px) {
-    .slogan {
-        margin: 20px;
-        margin-top: 10px;
-        font-size: 1.6rem;
-    }
-    a {
-        font-size: 1.4rem;
-    }
-    .fab {
-        font-size: 1.4rem;
-        padding: 6px;
-    }
-    .music-container {
-        width: 70%;
-    }
-    .offset-1 {
-        margin-left: 0 !important;
-    }
-    .lyrics-text {
-        width: 50vw;
-    }
-}*/
