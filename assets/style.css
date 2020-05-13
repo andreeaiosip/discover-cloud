@@ -285,6 +285,21 @@ input[type=text], input[type=tel], select, textarea, input[type=email] {
     color: #fafafa;
 }
 
+.contact-map {
+	margin: 0;
+	padding: 0;
+	align-items: center;
+}
+
+.tempclosed {
+	color: #fafafa;
+	text-align: center;
+	font-weight: 700;
+}
+
+.map{
+	margin-bottom: 30px;
+}
 
 @media only screen and (min-width: 600px) {
     .container-form{
