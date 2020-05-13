@@ -219,13 +219,24 @@ Services
 }
     
 .myService1 {
-     border-radius: 15px 15px 0 0;
+	 border-radius: 15px 15px 0 0;
+	 display: flex;
+	 flex-wrap: wrap;
+	 flex-direction: column;
+	 justify-content: start;
+	 align-items: auto;
+	 align-content: start
+	
 }
 .myService3 {
     border-radius: 0 0 15px 15px ;
 }
 
-
+.myImg {
+	flex-basis: 140px;
+	flex: 0 0 auto;
+  margin: 10px;
+}
 
 /*
 -----------------
