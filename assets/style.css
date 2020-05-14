@@ -154,8 +154,8 @@ Main content - Index
 }
 
 .btn>a {
-text-decoration: none;
-color: #fafafa;
+    text-decoration: none;
+    color: #fafafa;
 }
 .btn:hover {
 	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
@@ -173,9 +173,9 @@ color: #fafafa;
 
 .btn-modal {
     font-size: 16px; 
-  font-weight: normal; 
-  padding: 5px 8px; 
-   margin-top: 0;
+    font-weight: normal; 
+    padding: 5px 8px; 
+    margin-top: 0;
 }
 
 .btn-center {
@@ -215,7 +215,8 @@ Services
 .myService3, .myService2, .myService1 {
     background-color: #100f0ecc;
     align-self: stretch;
-    padding: 20px;
+	padding: 20px;
+	/* flex-basis: 60%; */
 }
     
 .myService1 {
@@ -301,6 +302,10 @@ input[type=text], input[type=tel], select, textarea, input[type=email] {
 	margin-bottom: 30px;
 }
 
+footer {
+	text-align: center;
+	color: black;
+}
 @media only screen and (min-width: 600px) {
     .container-form{
         width: 60vw;
